@@ -44,6 +44,12 @@ $ npm run prepare
     <td align="center">
       <img src="https://user-images.githubusercontent.com/62709718/208676001-b838be17-a6da-4954-8382-7b537a359f2a.png" width="100px;" alt=""/>
     </td>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/62709718/208675953-3dbf10de-ed57-4b9a-9a5a-903dd5b8e708.png" width="100px;" alt=""/>
+    </td>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/62709718/208675588-1fc2c6ec-0a10-4496-b7de-39cfbfa5e7ab.png" width="100px;" alt=""/>
+    </td>
   </tr>
   <tr>    
     <td align="center">
@@ -66,27 +72,9 @@ $ npm run prepare
         <div>shinwonse</div>
       </a>
     </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/62709718/208675953-3dbf10de-ed57-4b9a-9a5a-903dd5b8e708.png" width="100px;" alt=""/>
-    </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/62709718/208675855-9b8dad0e-9314-43e5-8fb7-9da23ba465bd.png" width="100px;" alt=""/>
-    </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/62709718/208675588-1fc2c6ec-0a10-4496-b7de-39cfbfa5e7ab.png" width="100px;" alt=""/>
-    </td>
-  </tr>
-  <tr>    
     <td align="center">
       <a href="https://github.com/abcabcp">
         <div>abcabcp</div>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/Last-SilverLight-End">
-        <div>Last-SilverLight-End</div>
       </a>
     </td>
     <td align="center">
