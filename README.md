@@ -22,6 +22,13 @@ $ npm run prepare
 
 디스코드 음성 채널을 통해 회의를 진행하였습니다. 또한 각 세션별 문서를 organization 아래 [docs](https://github.com/wanted-preonboarding-fe-internship-8th/docs)로 관리하였습니다.
 
+## 개발 과정
+- [1. 프로젝트 개발 환경 세팅](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
+- [2.]()
+- [3.]()
+- [4.]()
+
+
 ## 팀원
 <table>
   <tr>
