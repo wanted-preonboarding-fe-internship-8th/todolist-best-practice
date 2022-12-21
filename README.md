@@ -6,6 +6,22 @@ $ npm install
 $ npm start
 ```
 
+## 커밋 규칙
+개발하시기 전에
+```bash
+$ npm run prepare
+```
+를 통해 `husky` 설치해주세요!
+
+기본적인 커밋 규칙은 다음 가이드를 따릅니다. [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+
+## 협업 방법
+<div>
+  <img src="https://user-images.githubusercontent.com/62709718/208821813-5f880759-64e4-46d4-8d2f-9721d231f4ae.png" width="200px;" />
+</div>
+
+디스코드 음성 채널을 통해 회의를 진행하였습니다. 또한 각 세션별 문서를 organization 아래 [docs](https://github.com/wanted-preonboarding-fe-internship-8th/docs)로 관리하였습니다.
+
 ## 팀원
 <table>
   <tr>
@@ -54,9 +70,6 @@ $ npm start
     <td align="center">
       <img src="https://user-images.githubusercontent.com/62709718/208675588-1fc2c6ec-0a10-4496-b7de-39cfbfa5e7ab.png" width="100px;" alt=""/>
     </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/62709718/208675728-a22adf4f-d840-4289-a4a9-d80f6a2c7a13.png" width="100px;" alt=""/>
-    </td>
   </tr>
   <tr>    
     <td align="center">
@@ -72,11 +85,6 @@ $ npm start
     <td align="center">
       <a href="https://github.com/dong53358">
         <div>dong53358</div>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/hongseonga">
-        <div>hongseonga</div>
       </a>
     </td>
   </tr>
