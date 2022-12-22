@@ -6,6 +6,8 @@ $ npm install
 $ npm start
 ```
 
+## 배포 링크
+
 ## 커밋 규칙
 개발하시기 전에
 ```bash
@@ -14,6 +16,13 @@ $ npm run prepare
 를 통해 `husky` 설치해주세요!
 
 기본적인 커밋 규칙은 다음 가이드를 따릅니다. [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+
+## 브랜치 전략
+- main (배포용 브랜치)
+- dev (개발용 브랜치)
+
+각 기능을 개발할 때 `feat/example`과 같이 브랜치를 생성하여 dev 브랜치로 `push`하였습니다.
+
 
 ## 협업 방법
 <div>
