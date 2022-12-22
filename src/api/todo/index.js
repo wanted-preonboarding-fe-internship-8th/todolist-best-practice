@@ -6,7 +6,7 @@ export const createTodo = async (todo) => {
     return await axios
       .post('/todos', { todo })
       .then((res) => {
-        if (res.status !== 200) {
+        if (res.status !== 201) {
           reject(res.data);
         }
         resolve(res.data);
