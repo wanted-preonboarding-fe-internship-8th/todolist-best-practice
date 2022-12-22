@@ -1,21 +1,26 @@
 # React TodoList Best Practice
 
 ## 실행 방법
+
 ```bash
 $ npm install
 $ npm start
 ```
 
 ## 커밋 규칙
+
 개발하시기 전에
+
 ```bash
 $ npm run prepare
 ```
+
 를 통해 `husky` 설치해주세요!
 
 기본적인 커밋 규칙은 다음 가이드를 따릅니다. [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 
 ## 협업 방법
+
 <div>
   <img src="https://user-images.githubusercontent.com/62709718/208821813-5f880759-64e4-46d4-8d2f-9721d231f4ae.png" width="200px;" />
 </div>
@@ -23,13 +28,14 @@ $ npm run prepare
 디스코드 음성 채널을 통해 회의를 진행하였습니다. 또한 각 세션별 문서를 organization 아래 [docs](https://github.com/wanted-preonboarding-fe-internship-8th/docs)로 관리하였습니다.
 
 ## 개발 과정
+
 - [1. 프로젝트 개발 환경 세팅](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
 - [2.]()
 - [3.]()
 - [4.]()
 
-
 ## 팀원
+
 <table>
   <tr>
     <td align="center">
@@ -84,3 +90,19 @@ $ npm run prepare
     </td>
   </tr>
 </table>
+
+## 공통 컴포넌트
+
+- Best: **_슬기 님_**
+
+### 선정 이유
+
+- Atomic Design Pattern
+  - 아토믹 디자인 패턴을 도입해 공통적으로 사용되는 컴포넌트 `Button`, `Input`, `Modal` 등의 재사용성을 높였습니다.
+
+### 코드 구현
+
+- src/components/common 하위에 컴포넌트를 모두 넣었습니다.
+- `onClick`, `onChange` 등의 이벤트에 사용되는 함수를 `props`로 전달받아 사용합니다.
+- `className`, `text` 등을 `props`로 전달받아 사용합니다.
+- 공통 컴포넌트는 별도의 css 모듈을 두지 않고 css-in-js로 구현했습니다.
