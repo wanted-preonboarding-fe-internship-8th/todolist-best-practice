@@ -9,7 +9,7 @@ const StyledInput = styled.div`
   & .input {
     width: 280px;
     height: 45px;
-    padding-right: 4px;
+    padding-left: 4px;
     background-color: var(--white);
     font-size: 16px;
     border: 1px solid var(--gray5);
@@ -26,10 +26,12 @@ const StyledInput = styled.div`
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    font-size: 14px;
     line-height: 1.2;
     color: var(--error);
     font-size: 1em;
+    p {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -56,7 +58,11 @@ export default function Input({
         onClick={onClick}
         name={name}
       />
-      {warningText && <div className="warning">{warningText}</div>}
+      {warningText && (
+        <div className="warning">
+          <p>{warningText} </p>
+        </div>
+      )}
     </StyledInput>
   );
 }
