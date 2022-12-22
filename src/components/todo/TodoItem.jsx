@@ -8,7 +8,9 @@ import {
 } from 'react-icons/ri';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+import Input from '../common/Input';
+
+const Wrapper = styled.li`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -16,60 +18,72 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Input = styled.input`
-  width: 400px;
-  height: 45px;
-  border-radius: 2px;
-  border: 1px solid #d6d6d6;
-  // border-width: ${(props) => props.borderWidth};
-  // border-radius: ${(props) => props.borderRadius};
-  padding: 4px 6px;
-  outline: none;
-  box-sizing: border-box;
-  font-size: 16px;
-`;
-
 const Text = styled.span`
   width: 380px;
   margin: 15px;
-  color: ${(props) => (props.isCompleted ? 'var(--grey6)' : 'var(--black)')};
+  color: ${(props) => (props.isCompleted ? 'var(--gray6)' : 'var(--black)')};
   text-decoration: ${(props) => (props.isCompleted ? 'line-through' : 'none')};
   text-decoration-color: ${(props) =>
-    props.isCompleted ? 'var(--grey6)' : 'var(--black)'};
+    props.isCompleted ? 'var(--gray6)' : 'var(--black)'};
+  word-break: break-all;
 `;
 
-export default function TodoItem({ todo }) {
+export default function TodoItem({
+  todo,
+  isEditing,
+  editValue,
+  onChangeEditValue,
+  onChangeEditStatus,
+  onUpdateTodo,
+  onDeleteTodo,
+}) {
   const IconStyleSmall = { width: 20, height: 20, cursor: 'pointer' };
   const IconStyle = { width: 23, height: 23, cursor: 'pointer' };
 
-  const { isCompleted, title } = todo;
-  const [isEditing, setIsEditing] = useState(true);
-
   return (
     <Wrapper>
-      {isCompleted ? (
-        <RiCheckboxCircleFill style={IconStyle} />
+      {todo.isCompleted ? (
+        <RiCheckboxCircleFill
+          style={IconStyle}
+          onClick={() => onUpdateTodo(todo.id, todo.todo, false)}
+        />
       ) : (
-        <RiCheckboxBlankCircleFill style={IconStyle} />
+        <RiCheckboxBlankCircleFill
+          style={IconStyle}
+          onClick={() => onUpdateTodo(todo.id, todo.todo, true)}
+        />
       )}
       {isEditing ? (
         <>
           <Input
             name="todo"
             type="text"
+            width="400px"
+            padding="4px 6px"
+            borderRadius="2px"
+            boxSizing="border-box"
+            outline="none"
             placeholder="항목을 추가하세요"
-            borderWidth="1px"
-            borderRadius="6px"
+            onChange={(e) => onChangeEditValue(e)}
+            value={editValue}
           />
-          <AiOutlineCheck style={IconStyleSmall} />
+          <AiOutlineCheck
+            style={IconStyleSmall}
+            onClick={() => onUpdateTodo(todo.id, editValue, todo.isCompleted)}
+          />
         </>
       ) : (
         <>
-          <Text>{title}</Text>
-          <FiEdit style={IconStyleSmall} />
+          <Text isCompleted={todo.isCompleted}>{todo.todo}</Text>
+          <FiEdit style={IconStyleSmall} onClick={() => onChangeEditStatus()} />
         </>
       )}
-      <BsTrash style={IconStyleSmall} />
+      <BsTrash
+        style={IconStyleSmall}
+        onClick={() => {
+          onDeleteTodo();
+        }}
+      />
     </Wrapper>
   );
 }

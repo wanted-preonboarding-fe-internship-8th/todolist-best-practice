@@ -2,18 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledInput = styled.div`
-  width: 280px;
-  & .property {
-    margin-right: 10px;
-  }
+  width: ${(props) => props.width};
+
   & .input {
-    width: 280px;
+    width: ${(props) => props.width};
     height: 45px;
-    padding-left: 4px;
+    padding: ${(props) => props.padding};
     background-color: var(--white);
     font-size: 16px;
     border: 1px solid var(--gray5);
-    border-radius: 6px;
+    border-radius: ${(props) => props.borderRadius};
+
+    outline: ${(props) => props.outline};
+    box-sizing: ${(props) => props.boxSizing};
+
     ::placeholder {
       color: var(--gray6);
     }
@@ -39,15 +41,29 @@ export default function Input({
   className,
   value,
   type,
+  width = '280px',
+  padding = '0 0 0 4px',
+  borderRadius = '6px',
+  outline,
+  boxSizing,
   placeholder = '',
   warningText,
   disabled,
   name,
   onClick,
   onChange,
+  onKeyPress,
 }) {
   return (
-    <StyledInput warningText={warningText} className={`${className}`}>
+    <StyledInput
+      warningText={warningText}
+      className={`${className}`}
+      width={width}
+      padding={padding}
+      borderRadius={borderRadius}
+      outline={outline}
+      boxSizing={boxSizing}
+    >
       <input
         disabled={disabled}
         placeholder={placeholder}
@@ -55,6 +71,7 @@ export default function Input({
         className="input"
         value={value}
         onChange={onChange}
+        onKeyPress={onKeyPress}
         onClick={onClick}
         name={name}
       />

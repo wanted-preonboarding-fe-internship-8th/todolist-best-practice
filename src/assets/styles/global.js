@@ -5,17 +5,22 @@ const GlobalStyle = createGlobalStyle`
     --blue: #252d58;
     --light-blue: #00d0ff;
     --text-blue: #06c;
+
     --gray1: #fefefe;
     --gray2: #ddd;
     --gray3: #ededed;
     --gray4: #9e9e9e;
     --gray5: #d6d6d6;
     --gray6: #9e9c9c;
+
     --primary-100: #a9c8f8;
     --primary-200: #98bdf6;
     --primary-300: #7eadf4;
+    --primary-400: #045de9;
+
     --error: #d21616;
     --white: #fff;
+
     --black: #252525;
     --gradient-blue: linear-gradient(to right, #44adff, #045de9);
   }
