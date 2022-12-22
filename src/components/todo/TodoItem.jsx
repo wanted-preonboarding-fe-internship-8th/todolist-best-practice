@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { AiOutlineCheck } from 'react-icons/ai';
 import { BsTrash } from 'react-icons/bs';
 import { FiEdit } from 'react-icons/fi';
