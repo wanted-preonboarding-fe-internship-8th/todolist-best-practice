@@ -40,19 +40,6 @@ export default function TodoItem({
   const IconStyleSmall = { width: 20, height: 20, cursor: 'pointer' };
   const IconStyle = { width: 23, height: 23, cursor: 'pointer' };
 
-  /*   const Input = styled.input`
-    width: 400px;
-    height: 45px;
-    border-radius: 2px;
-    border: 1px solid #d6d6d6;
-    // border-width: ${(props) => props.borderWidth};
-    // border-radius: ${(props) => props.borderRadius};
-    padding: 4px 6px;
-    outline: none;
-    box-sizing: border-box;
-    font-size: 16px;
-  `;
- */
   return (
     <Wrapper>
       {todo.isCompleted ? (
