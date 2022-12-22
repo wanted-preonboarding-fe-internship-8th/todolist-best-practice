@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     --error: #d21616;
     --white: #fff;
     --black: #252525;
+    --gradient-blue: linear-gradient(to right, #44adff, #045de9);
   }
   * {
     margin: 0;
