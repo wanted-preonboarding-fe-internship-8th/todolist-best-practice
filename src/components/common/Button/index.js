@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledButton = styled.div`
+const StyledButton = styled.button`
   width: 282px;
   height: 45px;
-  margin-top: 10px;
+  margin: 10px;
   border-radius: 10px;
+  border: none;
   background: var(--gradient-blue);
   outline: none;
   color: var(--white);
