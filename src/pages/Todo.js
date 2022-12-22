@@ -112,7 +112,7 @@ export default function Todo() {
 
   return (
     <Root>
-      <div className="todo-input-wraper">
+      <div className="todo-input-wrapper">
         <Input
           name="todo"
           type="text"
@@ -131,7 +131,7 @@ export default function Todo() {
           width="45px"
           height="45px"
           margin="0 0 0 10px"
-          background="none"
+          background=""
           color="var(--primary-400)"
           text="추가"
         />
