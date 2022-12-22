@@ -6,7 +6,7 @@ const StyledButton = styled.div`
   height: 45px;
   margin-top: 10px;
   border-radius: 10px;
-  background: linear-gradient(to right, #44adff, #045de9);
+  background: var(--gradient-blue);
   outline: none;
   color: var(--white);
   font-size: 16px;
@@ -20,7 +20,7 @@ const StyledButton = styled.div`
     height: 100%;
     border-radius: 10px;
     cursor: auto;
-    color: var(--gray2);
+    color: var(--gray6);
     background-color: var(--gray3);
     display: flex;
     align-items: center;
