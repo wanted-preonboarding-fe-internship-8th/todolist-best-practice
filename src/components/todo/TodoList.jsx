@@ -1,10 +1,3 @@
-import { AiOutlineCheck } from 'react-icons/ai';
-import { BsTrash } from 'react-icons/bs';
-import { FiEdit } from 'react-icons/fi';
-import {
-  RiCheckboxCircleFill,
-  RiCheckboxBlankCircleFill,
-} from 'react-icons/ri';
 import styled from 'styled-components';
 
 import TodoItem from './TodoItem';
@@ -45,8 +38,8 @@ const Input = styled.input`
   height: 45px;
   border: 1px solid #d6d6d6;
   border-radius: 2px;
-  border-width: ${(props) => props.borderWidth};
-  border-radius: ${(props) => props.borderRadius};
+  // border-width: ${(props) => props.borderWidth};
+  // border-radius: ${(props) => props.borderRadius};
   padding: 4px 6px;
   outline: none;
   box-sizing: border-box;
