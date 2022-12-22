@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Login from './Pages/Login';
-import Todo from './Pages/Todo';
+import Login from './pages/Login';
+import Todo from './pages/Todo';
 import Root from './Root';
 
 const router = createBrowserRouter([
