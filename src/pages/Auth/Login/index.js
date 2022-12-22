@@ -81,11 +81,6 @@ const Login = () => {
           className="user-input"
           placeholder="이메일 주소를 입력해주세요."
         />
-        {emailError && (
-          <div style={{ margin: '20px 0 10px 0' }}>
-            <ErrorMessage>이메일 형식을 확인해주세요.</ErrorMessage>
-          </div>
-        )}
         <Input
           name="password"
           type="password"
@@ -94,16 +89,11 @@ const Login = () => {
           className="user-input"
           placeholder="비밀번호를 입력해주세요."
         />
-        {passwordError && (
-          <div style={{ margin: '20px 0 10px 0' }}>
-            <ErrorMessage>비밀변호는 8자 이상입니다.</ErrorMessage>
-          </div>
-        )}
         <Button text="로그인" disabled={emailError | passwordError} />
         <Divider />
         <RowContainer>
           <p>계정이 없으세요?</p>
-          <LinkContainer onClick={() => navigate('/signup')}>
+          <LinkContainer onClick={() => navigate('signup')}>
             <div>
               <p>회원가입 바로가기</p>
               <BsArrowUpRight className="icon" />
