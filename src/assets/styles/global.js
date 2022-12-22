@@ -47,6 +47,7 @@ const GlobalStyle = createGlobalStyle`
   keygen,
   select,
   button {
+    all: unset;
     font-family: inherit;
     font-size: inherit;
   }
