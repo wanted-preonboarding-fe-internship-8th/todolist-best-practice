@@ -179,7 +179,7 @@ export default function Todo() {
 const Root = styled.div`
   width: 560px;
   margin: 0 auto;
-  & .todo-input-wraper {
+  & .todo-input-wrapper {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
