@@ -1,8 +1,9 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
-import Login from './pages/Login';
-import Todo from './pages/Todo';
+import Login from './Pages/Auth/Login';
+import SignUp from './Pages/Auth/SignUp';
+import Todo from './Pages/Todo';
 import Root from './Root';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         element: <Todo />,
       },
     ],
+  },
+  {
+    path: 'signup',
+    element: <SignUp />,
   },
 ]);
 

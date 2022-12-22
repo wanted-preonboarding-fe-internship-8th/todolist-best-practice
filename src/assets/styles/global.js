@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: var(--white);
   }
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   ul,
   li {
