@@ -10,13 +10,7 @@ import {
   passwordValidation,
 } from '../../../utils/validations';
 
-import {
-  IdPwContainer,
-  Wrapper,
-  RowContainer,
-  LinkContainer,
-  ErrorMessage,
-} from './style';
+import { IdPwContainer, Wrapper, RowContainer, LinkContainer } from './style';
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -46,7 +40,11 @@ const SignUp = () => {
     setPasswordError(true);
     setPassword(target.value);
   };
-
+  /**
+   * post SignUp
+   * @param {string} email
+   * @param {string} password
+   */
   const onSignUp = async (e) => {
     e.preventDefault();
     await signUp(email, password)
@@ -76,12 +74,8 @@ const SignUp = () => {
           onChange={handleEmailInput}
           className="user-input"
           placeholder="이메일 주소를 입력해주세요."
+          warningText={emailError ? '이메일 형식이 아닙니다.' : null}
         />
-        {emailError && (
-          <div style={{ margin: '20px 0 10px 0' }}>
-            <ErrorMessage>이메일 형식을 확인해주세요.</ErrorMessage>
-          </div>
-        )}
         <Input
           name="password"
           type="password"
@@ -89,12 +83,8 @@ const SignUp = () => {
           onChange={handlePasswordInput}
           className="user-input"
           placeholder="비밀번호를 입력해주세요."
+          warningText={passwordError ? '비밀번호는 8자 이상입니다.' : null}
         />
-        {passwordError && (
-          <div style={{ margin: '20px 0 10px 0' }}>
-            <ErrorMessage>비밀변호는 8자 이상입니다.</ErrorMessage>
-          </div>
-        )}
         <Button text="계정 만들기" disabled={emailError | passwordError} />
         <RowContainer>
           <p> 이미 계정이 있으세요? </p>

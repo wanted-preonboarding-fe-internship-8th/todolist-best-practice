@@ -36,8 +36,3 @@ export const LinkContainer = styled.div`
     text-decoration: underline;
   }
 `;
-
-export const ErrorMessage = styled.span`
-  color: var(--error);
-  font-size: 14px;
-`;

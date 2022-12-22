@@ -10,12 +10,7 @@ import {
   emailValidation,
   passwordValidation,
 } from '../../../utils/validations';
-import {
-  IdPwContainer,
-  Wrapper,
-  ErrorMessage,
-  RowContainer,
-} from '../SignUp/style';
+import { IdPwContainer, Wrapper, RowContainer } from '../SignUp/style';
 
 import { Divider, LinkContainer } from './style';
 
@@ -48,6 +43,11 @@ const Login = () => {
     setPassword(target.value);
   };
 
+  /**
+   * post SignIn
+   * @param {string} email
+   * @param {string} password
+   */
   const onSignIn = async (e) => {
     e.preventDefault();
     await signIn(email, password)
