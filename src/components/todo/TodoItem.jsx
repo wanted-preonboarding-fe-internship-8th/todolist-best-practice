@@ -21,8 +21,8 @@ const Input = styled.input`
   height: 45px;
   border-radius: 2px;
   border: 1px solid #d6d6d6;
-  border-width: ${(props) => props.borderWidth};
-  border-radius: ${(props) => props.borderRadius};
+  // border-width: ${(props) => props.borderWidth};
+  // border-radius: ${(props) => props.borderRadius};
   padding: 4px 6px;
   outline: none;
   box-sizing: border-box;
@@ -32,6 +32,10 @@ const Input = styled.input`
 const Text = styled.span`
   width: 380px;
   margin: 15px;
+  color: ${(props) => (props.isCompleted ? 'var(--grey6)' : 'var(--black)')};
+  text-decoration: ${(props) => (props.isCompleted ? 'line-through' : 'none')};
+  text-decoration-color: ${(props) =>
+    props.isCompleted ? 'var(--grey6)' : 'var(--black)'};
 `;
 
 export default function TodoItem({ todo }) {
