@@ -90,19 +90,3 @@ $ npm run prepare
     </td>
   </tr>
 </table>
-
-## 공통 컴포넌트
-
-- Best: **_슬기 님_**
-
-### 선정 이유
-
-- Atomic Design Pattern
-  - 아토믹 디자인 패턴을 도입해 공통적으로 사용되는 컴포넌트 `Button`, `Input`, `Modal` 등의 재사용성을 높였습니다.
-
-### 코드 구현
-
-- src/components/common 하위에 컴포넌트를 모두 넣었습니다.
-- `onClick`, `onChange` 등의 이벤트에 사용되는 함수를 `props`로 전달받아 사용합니다.
-- `className`, `text` 등을 `props`로 전달받아 사용합니다.
-- 공통 컴포넌트는 별도의 css 모듈을 두지 않고 css-in-js로 구현했습니다.
