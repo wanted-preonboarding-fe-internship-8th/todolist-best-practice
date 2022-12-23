@@ -8,6 +8,7 @@ const StyledInput = styled.div`
     width: ${(props) => props.width};
     height: 45px;
     padding: ${(props) => props.padding};
+    margin-bottom: 10px;
     background-color: var(--white);
     font-size: 16px;
     border: 1px solid var(--gray5);
@@ -27,7 +28,7 @@ const StyledInput = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin-bottom: 10px;
     line-height: 1.2;
     color: var(--error);
     font-size: 1em;

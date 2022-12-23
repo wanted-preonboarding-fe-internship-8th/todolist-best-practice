@@ -27,7 +27,7 @@ export const RowContainer = styled.div`
 `;
 
 export const LinkContainer = styled.div`
-  margin: 10px;
+  margin-left: 10px;
   cursor: pointer;
   color: var(--black);
   text-decoration: none;
@@ -35,4 +35,10 @@ export const LinkContainer = styled.div`
     color: var(--text-blue);
     text-decoration: underline;
   }
+`;
+
+export const Divider = styled.div`
+  width: 200px;
+  border: 0.5px solid var(--gray3);
+  margin: 30px 0;
 `;

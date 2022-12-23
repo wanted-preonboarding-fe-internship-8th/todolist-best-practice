@@ -8,10 +8,14 @@ export const Divider = styled.div`
 
 export const LinkContainer = styled.div`
   cursor: pointer;
-  color: var(--text-blue);
+  color: var(--black);
   text-decoration: none;
   p {
     margin-left: 10px;
+  }
+  &:hover {
+    color: var(--text-blue);
+    text-decoration: underline;
   }
   .icon {
     margin-left: 5px;
