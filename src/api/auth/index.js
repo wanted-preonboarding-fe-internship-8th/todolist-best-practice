@@ -4,7 +4,7 @@ export const signUp = (email, password) => {
   // eslint-disable-next-line no-async-promise-executor
   return new Promise(async (resolve, reject) => {
     return await axios
-      .post(`/auth/signup`, {
+      .post('/auth/signup', {
         email,
         password,
       })
