@@ -19,7 +19,10 @@ const SignUp = () => {
 
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState({ open: false, message: '' });
+  const [isModalOpen, setIsModalOpen] = useState({
+    open: false,
+    message: '',
+  });
 
   const handleEmailInput = ({ target }) => {
     if (emailValidation(target.value)) {
@@ -51,8 +54,11 @@ const SignUp = () => {
       .then((response) => {
         const data = response;
         if (data) {
-          localStorage.setItem('token', data['access_token']);
-          navigate('/');
+          setIsModalOpen({
+            open: true,
+            message: '회원 가입이 완료되었습니다',
+          });
+          // navigate('/');
         }
       })
       .catch((error) => {
@@ -97,7 +103,10 @@ const SignUp = () => {
         <Modal
           text={isModalOpen.message}
           close="확인"
-          onClose={() => setIsModalOpen({ ...isModalOpen, open: false })}
+          onClose={() => {
+            setIsModalOpen({ ...isModalOpen, open: false });
+            navigate('/');
+          }}
         />
       )}
     </Wrapper>
