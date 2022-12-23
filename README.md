@@ -7,6 +7,8 @@ $ npm install
 $ npm start
 ```
 
+## 배포 링크
+
 ## 커밋 규칙
 
 개발하시기 전에
@@ -19,20 +21,32 @@ $ npm run prepare
 
 기본적인 커밋 규칙은 다음 가이드를 따릅니다. [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 
+## 브랜치 전략
+
+- main (배포용 브랜치)
+- dev (개발용 브랜치)
+
+각 기능을 개발할 때 `feat/example`과 같이 브랜치를 생성하여 dev 브랜치로 `push`하였습니다.
+
 ## 협업 방법
 
 <div>
   <img src="https://user-images.githubusercontent.com/62709718/208821813-5f880759-64e4-46d4-8d2f-9721d231f4ae.png" width="200px;" />
 </div>
 
-디스코드 음성 채널을 통해 회의를 진행하였습니다. 또한 각 세션별 문서를 organization 아래 [docs](https://github.com/wanted-preonboarding-fe-internship-8th/docs)로 관리하였습니다.
+디스코드 음성 채널을 통해 회의를 진행하였습니다. 또한 각 세션별 문서를 organization 아래 [docs](https://github.com/wanted-preonboarding-fe-internship-8th/docs/tree/main/Session_1)로 관리하였습니다.
 
-## 개발 과정
+디스코드 웹훅을 설정하여 디스코드 채널로 `push`알람을 받았습니다.
+
+## 개발 과정 및 Best Practice
 
 - [1. 프로젝트 개발 환경 세팅](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
-- [2.]()
-- [3.]()
-- [4.]()
+- [2. axios 및 api 세팅 및 router 설정, validation helper](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-routing,-api-%EC%84%B8%ED%8C%85)
+- [3. 공통 component 제작](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%EA%B3%B5%ED%86%B5-component-%EC%A0%9C%EC%9E%91)
+- [4. todo 관련 component 제작](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Todo-%EA%B4%80%EB%A0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
+- [5. auth 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Auth-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
+- [6. todo 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/todo-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
+- [7. 배포](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%EB%B0%B0%ED%8F%AC)
 
 ## 팀원
 
