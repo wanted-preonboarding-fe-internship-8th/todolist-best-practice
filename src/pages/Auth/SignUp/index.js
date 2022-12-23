@@ -10,7 +10,13 @@ import {
   passwordValidation,
 } from '../../../utils/validations';
 
-import { IdPwContainer, Wrapper, RowContainer, LinkContainer } from './style';
+import {
+  IdPwContainer,
+  Wrapper,
+  RowContainer,
+  LinkContainer,
+  Divider,
+} from './style';
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -86,6 +92,7 @@ const SignUp = () => {
           warningText={passwordError ? '비밀번호는 8자 이상입니다.' : null}
         />
         <Button text="계정 만들기" disabled={emailError | passwordError} />
+        <Divider />
         <RowContainer>
           <p> 이미 계정이 있으세요? </p>
           <LinkContainer onClick={() => navigate('/')}>
