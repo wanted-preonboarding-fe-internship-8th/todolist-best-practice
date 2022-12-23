@@ -46,7 +46,7 @@ $ npm run prepare
 - [4. todo 관련 component 제작](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Todo-%EA%B4%80%EB%A0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
 - [5. auth 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Auth-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
 - [6. todo 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/todo-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
-- [7. 배포]()
+- [7. 배포](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%EB%B0%B0%ED%8F%AC)
 
 ## 팀원
 
