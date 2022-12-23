@@ -4,7 +4,7 @@ export const signUp = (email, password) => {
   // eslint-disable-next-line no-async-promise-executor
   return new Promise(async (resolve, reject) => {
     return await axios
-      .post(`https://pre-onboarding-selection-task.shop/auth/signup`, {
+      .post(`/auth/signup`, {
         email,
         password,
       })
@@ -24,7 +24,7 @@ export const signIn = async (email, password) => {
   // eslint-disable-next-line no-async-promise-executor
   return new Promise(async (resolve, reject) => {
     return await axios
-      .post('https://pre-onboarding-selection-task.shop/auth/signin', {
+      .post('/auth/signin', {
         email,
         password,
       })
