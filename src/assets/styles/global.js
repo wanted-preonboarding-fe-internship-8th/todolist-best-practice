@@ -29,20 +29,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   
   }
-  html {
-    @media (max-width: 600px) {
-      width: 100vw;
-      height: 100vh;
-      font-size: 1.6vw;
-    }
-  }
   body {
-    padding: 5rem;
     color: var(--black);
     background-color: var(--white);
   }
   h1 {
-    font-size: 2rem;
+    font-size: 16px;
   }
   ul,
   li {
