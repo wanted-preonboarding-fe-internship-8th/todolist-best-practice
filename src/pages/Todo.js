@@ -78,7 +78,6 @@ export default function Todo() {
    * @param {boolean} isCompleted todo complete state
    */
   const onUpdateTodo = async (id, todo, isCompleted) => {
-    console.log(id, todo, isCompleted);
     await updateTodo(id, todo, isCompleted)
       .then(() => {
         setIsEditTodoId(undefined);
