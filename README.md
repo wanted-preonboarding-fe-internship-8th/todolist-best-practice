@@ -42,7 +42,7 @@ $ npm run prepare
 
 - [1. 프로젝트 개발 환경 세팅](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85)
 - [2. axios 및 api 세팅 및 router 설정, validation helper](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-routing,-api-%EC%84%B8%ED%8C%85)
-- [3. 공통 component 제작]()
+- [3. 공통 component 제작](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/%EA%B3%B5%ED%86%B5-component-%EC%A0%9C%EC%9E%91)
 - [4. todo 관련 component 제작](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Todo-%EA%B4%80%EB%A0%A8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
 - [5. auth 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/Auth-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
 - [6. todo 관련 페이지 및 기능](https://github.com/wanted-preonboarding-fe-internship-8th/todolist-best-practice/wiki/todo-%EA%B4%80%EB%A0%A8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%B0%8F-%EA%B8%B0%EB%8A%A5)
