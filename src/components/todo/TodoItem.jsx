@@ -65,6 +65,10 @@ export default function TodoItem({
             outline="none"
             placeholder="항목을 추가하세요"
             onChange={(e) => onChangeEditValue(e)}
+            onKeyPress={(e) =>
+              e.key === 'Enter' &&
+              onUpdateTodo(todo.id, editValue, todo.isCompleted)
+            }
             value={editValue}
           />
           <AiOutlineCheck
