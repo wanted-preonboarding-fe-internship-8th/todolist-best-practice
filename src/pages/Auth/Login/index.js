@@ -80,6 +80,7 @@ const Login = () => {
           onChange={handleEmailInput}
           className="user-input"
           placeholder="이메일 주소를 입력해주세요."
+          warningText={emailError ? '이메일 형식이 아닙니다.' : null}
         />
         <Input
           name="password"
@@ -88,6 +89,7 @@ const Login = () => {
           onChange={handlePasswordInput}
           className="user-input"
           placeholder="비밀번호를 입력해주세요."
+          warningText={passwordError ? '비밀번호는 8자 이상입니다.' : null}
         />
         <Button text="로그인" disabled={emailError | passwordError} />
         <Divider />
