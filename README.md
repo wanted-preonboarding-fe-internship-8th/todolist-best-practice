@@ -10,8 +10,6 @@ $ npm install
 $ npm start
 ```
 
-## 배포 링크
-
 ## 커밋 규칙
 
 개발하시기 전에
