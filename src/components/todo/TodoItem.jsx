@@ -1,4 +1,4 @@
-import { AiOutlineCheck } from 'react-icons/ai';
+import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 import { BsTrash } from 'react-icons/bs';
 import { FiEdit } from 'react-icons/fi';
 import {
@@ -31,6 +31,7 @@ export default function TodoItem({
   todo,
   isEditing,
   editValue,
+  onCancelEdit,
   onChangeEditValue,
   onChangeEditStatus,
   onUpdateTodo,
@@ -70,19 +71,23 @@ export default function TodoItem({
             style={IconStyleSmall}
             onClick={() => onUpdateTodo(todo.id, editValue, todo.isCompleted)}
           />
+          <AiOutlineClose
+            style={IconStyleSmall}
+            onClick={() => onCancelEdit()}
+          />
         </>
       ) : (
         <>
           <Text isCompleted={todo.isCompleted}>{todo.todo}</Text>
           <FiEdit style={IconStyleSmall} onClick={() => onChangeEditStatus()} />
+          <BsTrash
+            style={IconStyleSmall}
+            onClick={() => {
+              onDeleteTodo();
+            }}
+          />
         </>
       )}
-      <BsTrash
-        style={IconStyleSmall}
-        onClick={() => {
-          onDeleteTodo();
-        }}
-      />
     </Wrapper>
   );
 }

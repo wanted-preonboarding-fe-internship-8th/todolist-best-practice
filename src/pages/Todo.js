@@ -143,6 +143,7 @@ export default function Todo() {
               todo={todo}
               isEditing={isEditTodoId === todo.id}
               editValue={todoInputValue.update}
+              onCancelEdit={() => setIsEditTodoId()}
               onChangeEditStatus={() => onChangeEditStatus(todo.id, todo.todo)}
               onChangeEditValue={(e) =>
                 setTodoInputValue({ ...todoInputValue, update: e.target.value })
